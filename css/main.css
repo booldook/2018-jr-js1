@@ -1,0 +1,2 @@
+@import 'base.css';
+#box1 {width: 200px; height: 200px; border: 10px solid #f00; padding: 20px; box-sizing: border-box;}
