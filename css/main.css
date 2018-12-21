@@ -1,2 +1,12 @@
 @import 'base.css';
-#box1 {width: 200px; height: 200px; border: 10px solid #f00; padding: 20px; box-sizing: border-box;}
+.box {width: 20px; height: 20px; border: 2px solid #f00; padding: 2px; 
+	/* animation-name: bgAni; */ animation-duration: 1s; /* animation-delay: 3s; */ animation-fill-mode: forwards; float: left; background-color: #ff0;}
+
+@keyframes bgAni {
+	0% {background-color: #ff0;}
+	100% {background-color: #f00;}
+}
+@keyframes bgAniBack {
+	0% {background-color: #f00;}
+	100% {background-color: #ff0;}
+}
