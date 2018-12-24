@@ -9,9 +9,9 @@ function add(a, b) {
 
 var add2 = function() {
 	log(11 + 22);
-}
+};
 
-$("body").on("click", add2);
+jQuery("body").on("click", add2);
 
 //IIFE 즉시실행함수, 캡슐화가 가능하다.
 (function add3() {
@@ -31,7 +31,16 @@ console.log(person.getName());
 
 var Person = (function(){
 	var age = 25;
+	var gender = 'M';
+	function Person() {
+		this.age = age;
+	}
+	return Person;
 }());
 
 
 var booldook = new Person();
+log(booldook.age);
+
+
+
