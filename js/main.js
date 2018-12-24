@@ -22,9 +22,6 @@ for(var i=0; i<1500; i++) {
 	$(".box_wrap").append('<div class="box" '+color+'></div>');
 }
 
-
-
-$(".box").css({"background-color": "#ff0"});
 $(".box").on("mouseenter", function(){
 	$(this).css({"animation-name":"bgAni"});	
 });
