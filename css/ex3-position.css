@@ -1,3 +1,4 @@
 @import 'base.css';
 
-
+.boxes {width:100%; max-width:1200px; margin: auto; position: relative;}
+.box_txt {position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); font-size:8vw;}
