@@ -19,7 +19,6 @@ $.ajax({
 	}
 });
 
-
 var n = 1	;
 
 $(window).on("resize", function(){
