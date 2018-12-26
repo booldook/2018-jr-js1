@@ -2,9 +2,3 @@
 
 .boxes {width:100%; max-width:1200px; margin: auto; position: relative;}
 .box_txt {position: absolute; left:50%; top:50%; transform: translate(-50%, -50%); font-size:8vw;}
-/* 
-반응형
-박스가 문서 중앙 정렬
-1200px
-이미지 위에 New York 글씨가 반응형이 되도록 
-*/

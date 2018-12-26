@@ -1,0 +1,27 @@
+{
+	"result":[{
+		"src":"../img/ban0.jpg",
+		"link":"https://naver.com",
+		"target":"_blank"
+	},{
+		"src":"../img/ban1.jpg",
+		"link":"https://daum.net",
+		"target":"_blank"
+	},{
+		"src":"../img/ban2.jpg",
+		"link":"https://google.com",
+		"target":"_blank"
+	},{
+		"src":"../img/ban3.png",
+		"link":"../main/ex1.html",
+		"target":"_self"
+	},{
+		"src":"../img/ban4.jpg",
+		"link":"../main/ex2.html",
+		"target":"_self"
+	},{
+		"src":"../img/ban5.jpg",
+		"link":"../main/ex2-ani1.html",
+		"target":"_self"
+	}]
+}
