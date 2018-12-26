@@ -4,22 +4,12 @@ $.ajax({
 	dataType: "json",
 	data : {},
 	success: function(data){
-		/*
-		for(var i=0; i<data.result.length; i++) {
-			console.log(data.result[i]);
-		}
-		*/
 		var html = '';
 		for(var i in data.result) {
-			/* html  = '<li class="banner">';
-			html += '<img src="'+data.result[i].src+'" class="img">';
-			html += '</li>'; */
-
 			html = `
 			<li class="banner">
 				<img src="${data.result[i].src}" class="img">
 			</li>`;
-
 			$(".banners>ul").append(html);
 		}
 		
