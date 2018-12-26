@@ -1,4 +1,9 @@
 @import 'base.css';
-.box1 {width:600px; height:600px; background-color: rgb(110, 71, 24)}
-.box2 {width:400px; height:400px; background-color: rgb(138, 163, 25)}
-.box3 {width:200px; height:200px; background-color: rgb(31, 168, 202)}
+
+.box {width:100%; height:100%; position: relative;}
+.box > div {color:#000; font-size:5rem;}
+#box1 {background-color: blanchedalmond;}
+#box2 {background-color: cadetblue;}
+#box3 {background-color: darkkhaki;}
+#box4 {background-color: darkorange;}
+#box5 {background-color: deepskyblue;}
