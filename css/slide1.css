@@ -1,0 +1,6 @@
+@import 'base.css';
+
+.wrap {width:100%;}
+.banners {width:100%; max-width:1200px; margin:auto; position:relative; overflow:hidden;}
+.banners > ul {width:100%; position:absolute;}
+.banner {width:100%; position:absolute;}
