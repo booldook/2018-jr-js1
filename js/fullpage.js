@@ -8,7 +8,9 @@ DOMMouseScroll(firefox에서 실행됨) 이벤트를 동시에 선언
 */
 $(window).on('mousewheel DOMMouseScroll', function(e){
 	e.preventDefault();	//휠의 기본 기능을 막음(이벤트의 기본 기능 제거)
-	direction = e.originalEvent.deltaY;	//휠의 방향을 direction변수에 저장
+	//direction = e.originalEvent.deltaY;	//휠의 방향을 direction변수에 저장
+	if(e.originalEvent.detail) direction = e.originalEvent.detail;	//firefox 용
+	else direction = e.originalEvent.deltaY;	//ff 를 제외한 브라우저
 
 	//각각의 페이지의 body로 부터 떨어진 값을 pos 배열 변수에 저장
 	$(".page").each(function(i){
