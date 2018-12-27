@@ -17,24 +17,24 @@ $(window).on('mousewheel DOMMouseScroll', function(e){
 		pos[i] = $(this).offset().top;	//offset(): 부모로 부터의 거리값
 	});
 	
-	now = pos.length - 1;
-	//for(var i=0; i<pos.length; i++) {
+	//현재 위차한 페이지(휠 이벤트가 일어난)를 찾아내는 알고리즘
+	now = pos.length - 1;	//마지막 페이지를 now에 할당
 	for(var i in pos) {
 		//log("e.pageY : " + e.pageY);
 		//log("pos["+i+"] : " + pos[i]);
 		if(e.pageY < pos[i]) {
 			now = i - 1;
-			break;
+			break;	//반복문 안에서(for / for in) break를 만나면 그 즉시 반복문을 빠져나온다.
 		}
 	}
-	log(now, direction);
+	//log(now, direction);
 	//휠의 방향에 따른 애니메이션 분기
 	if(direction < 0) {
-		if(now > 0) now--;
+		if(now > 0) now--;	//0페이지를 제외한 페이지에서는 현재페이지 - 1 해준다.
 		pageAni();
 	}
 	else {
-		if(now < pos.length - 1) now++;
+		if(now < pos.length - 1) now++; //마지막 페이지를 제외한 페이지에서는 현재페이지 +1
 		pageAni();
 	}
 });

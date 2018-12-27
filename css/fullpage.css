@@ -1,10 +1,21 @@
 @import 'base.css';
 a, a:hover, a:link {text-decoration: none;}
-.page {width:100%; height:100%; position: relative; padding-top:10%;}
+.page {width:100%; height:100%; position: relative; padding-top:5%;}
 .page > div {color:#000; font-size:2rem;}
 #navs {width:98%; top:1%; left:1%; position:fixed; z-index:999;}
-/* #box1 {background-color: blanchedalmond;}
+#box1 {background-color: blanchedalmond;}
 #box2 {background-color: cadetblue;}
 #box3 {background-color: darkkhaki;}
 #box4 {background-color: darkorange;}
-#box5 {background-color: deepskyblue;} */
+#box5 {background-color: deepskyblue;}
+
+.wrap {width:100%; max-width:800px; margin:auto;}
+.title {text-align:center; font-size:2rem;}
+.summary {text-align:center; font-size:1.25rem; color:#666; margin:1rem 0;}
+.cities {font-size:0.875rem;}
+.city {float:left; width:32%; padding:0.75em; background-color: #fff;}
+.city:nth-child(2) {margin:0 2%;}
+.city_name {margin:0.5em; font-size:1.125em;}
+.city_day {margin:0.5em; font-size:1em;}
+.city_cont {margin:0.5em; font-size:0.875em;}
+
