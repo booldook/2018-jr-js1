@@ -19,3 +19,28 @@ a, a:hover, a:link {text-decoration: none;}
 .city_day {margin:0.5em; font-size:1em;}
 .city_cont {margin:0.5em; font-size:0.875em;}
 
+@keyframes leftAni {
+	0% {transform:translateX(-200px); opacity:0;}
+	50% {opacity:1;}
+	100% {transform:translateX(0); opacity:1;}
+}
+@keyframes rightAni {
+	0% {transform:translateX(200px); opacity:0;}
+	50% {opacity:1;}
+	100% {transform:translateX(0); opacity:1;}
+}
+@keyframes topAni {
+	0% {transform:translateY(-200px); opacity:0;}
+	50% {opacity:1;}
+	100% {transform:translateY(0); opacity:1;}
+}
+@keyframes bottomAni {
+	0% {transform:translateY(200px); opacity:0;}
+	50% {opacity:1;}
+	100% {transform:translateY(0); opacity:1;}
+}
+@keyframes opaAni {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
