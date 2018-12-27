@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>가로 슬라이드3 (feat. ajax)</title>
+	<title>Full page</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/w3.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -16,6 +16,13 @@
 </head>
 
 <body>
+	<div class="w3-bar w3-black" id="navs">
+		<a class="w3-bar-item w3-button">Home</a>
+		<a class="w3-bar-item w3-button">Page 1</a>
+		<a class="w3-bar-item w3-button">Page 2</a>
+		<a class="w3-bar-item w3-button">Page 3</a>
+		<a class="w3-bar-item w3-button">Page 4</a>
+	</div>
 	<div class="page bg-primary" id="box1">
 		<div class="text-uppercase">--Page0--</div>
 	</div>
@@ -25,8 +32,8 @@
 	<div class="page bg-info" id="box3">
 		<div>--Page2--</div>
 	</div>
-	<div class="page w3-light-gray" id="box4">
-		<div class="jum"></div>
+	<div class="page w3-dark-gray" id="box4">
+		<p class="alert alert-success fade in">방명록<a class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
 	</div>
 	<div class="page bg-success" id="box5">
 		<div>--Page4--</div>

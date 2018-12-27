@@ -31,10 +31,25 @@ $(window).on('mousewheel DOMMouseScroll', function(e){
 	//휠의 방향에 따른 애니메이션 분기
 	if(direction < 0) {
 		if(now > 0) now--;
-		$("html, body").stop().animate({"scrollTop":pos[now]+"px"}, 500);
+		pageAni();
 	}
 	else {
 		if(now < pos.length - 1) now++;
-		$("html, body").stop().animate({"scrollTop":pos[now]+"px"}, 500);
+		pageAni();
 	}
 });
+
+$("#navs > a").click(function(){
+	now = $(this).index();
+	$(".page").each(function(i){
+		pos[i] = $(this).offset().top;	//offset(): 부모로 부터의 거리값
+	});
+	pageAni();
+});
+
+function pageAni() {
+	$("html, body").stop().animate({"scrollTop":pos[now]+"px"}, 500, function(){
+		$("#navs > a").removeClass("w3-light-grey");
+		$("#navs > a").eq(now).addClass("w3-light-grey");
+	});
+}
