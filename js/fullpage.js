@@ -51,5 +51,20 @@ function pageAni() {
 	$("html, body").stop().animate({"scrollTop":pos[now]+"px"}, 500, function(){
 		$("#navs > a").removeClass("w3-light-grey");
 		$("#navs > a").eq(now).addClass("w3-light-grey");
+		animation($(".page").eq(now));
 	});
 }
+
+$(".ani").each(function(){
+	$(this).css({"opacity":0, "animation-fill-mode":"forwards"});
+});
+
+function animation(obj) {
+	obj.find(".ani").each(function(){
+		var name = $(this).data("ani");
+		var speed = $(this).data("speed");
+		$(this).css({"animation-name":name, "animation-duration":speed});
+	});
+}
+
+pageAni(0);

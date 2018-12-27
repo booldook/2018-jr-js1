@@ -18,6 +18,11 @@ a, a:hover, a:link {text-decoration: none;}
 .city_name {margin:0.5em; font-size:1.125em;}
 .city_day {margin:0.5em; font-size:1em;}
 .city_cont {margin:0.5em; font-size:0.875em;}
+/*
+.city:nth-child(1) {animation-name:leftAni; animation-duration:0.5s; animation-fill-mode:forwards; opacity:0;}
+.city:nth-child(2) {animation-name:scaleAni; animation-duration:0.5s; animation-fill-mode:forwards; opacity:0;}
+.city:nth-child(3) {animation-name:rightAni; animation-duration:0.5s; animation-fill-mode:forwards; opacity:0;}
+*/
 
 @keyframes leftAni {
 	0% {transform:translateX(-200px); opacity:0;}
@@ -43,4 +48,10 @@ a, a:hover, a:link {text-decoration: none;}
 	0% {opacity:0;}
 	100% {opacity:1;}
 }
+@keyframes scaleAni {
+	0% {transform:scale(1.5); opacity:0;}
+	50% {opacity:1;}
+	100% {transform:scale(1); opacity:1;}
+}
+
 
