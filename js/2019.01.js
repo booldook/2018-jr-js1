@@ -47,7 +47,7 @@ $("#bt4").click(function(){
 	//log(Math.floor(r*46));
 	lotto = new Array();
 	for(i=0; i<6; i++) {
-		r = Math.floor(Math.random()*(num.length+1));
+		r = Math.floor(Math.random()*num.length);
 		lotto.push(num[r]);
 		num.splice(r, 1);
 	}
