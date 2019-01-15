@@ -33,7 +33,7 @@ css = $(".box").attr("id");			//Getter
 
 
 // jQuery Event
-// click() / hover(f(){},f(){}) / mouseenter(), mouseleave() / keypress() / scroll()
+// click() / hover(f(){},f(){}) / mouseenter(), mouseleave() / keypress() / scroll() / ready() / ..
 // https://www.w3schools.com/jquery/jquery_ref_events.asp
 $("#bt2").click(	function(){	log("눌림1");	}	);
 $("#bt2").on("click",	function(){	log("눌림2");	}	);
@@ -62,3 +62,20 @@ $("#box2").mousemove(function(e){
 	}
 });
 */
+
+// html 건드리기 / html() / before() / after() / append() / appendTo() / prepend() / prependTo() / empty() / remove() / clone()
+//$(".box").text("<p>넣어라~~~~</p>");
+$(".box").html("<p>넣어라~~~~</p>");	//Setter
+log( $(".box").html() );	//Getter
+
+$("#bt3").click(function(){
+	var obj = $("#box2").clone();	//복사 ctrl+c
+	$("body").append(obj);				//맨 뒤에 붙여넣기 ctrl+v
+	//$("body").prepend(obj);			//맨 앞에 붙여넣기 ctrl+v
+	//$(obj).appendTo($("body"));	//대상이 바뀐 맨 앞에 붙여넣기 ctrl+v
+	//$(obj).prependTo($("body"));//대상이 바뀐 맨 뒤에 붙여넣기 ctrl+v
+});
+
+//Selector/ parent() / next() / prev() / children() / find() / eq() / index()
+$(".box").parent();
+$(".box").next();

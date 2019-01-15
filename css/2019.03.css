@@ -4,6 +4,6 @@ body {padding:2rem; text-align:center;}
 
 .box {background-color:#f90; padding:1rem; margin:auto; height:100px; overflow:auto;}
 
-#box2 {width:100px; height:100px; position:absolute; margin:0;}
+#box2 {width:100px; height:100px; margin:0;}
 
 .test {width:50%;}
