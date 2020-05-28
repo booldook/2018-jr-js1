@@ -7,3 +7,4 @@
 
 #loader {position:fixed; background-color:rgba(0,0,0,0.7); width:100%; height:100%; z-index:999;}
 #loader > .fa-spinner {font-size:3rem; color:white; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
+

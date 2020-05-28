@@ -1,3 +1,4 @@
+
 var n = 1;
 var a = 1;
 var end = $(".banner").length - 1;
@@ -13,8 +14,10 @@ $(".banner").each(function(i){
 
 function ani(){
 	$(".banners > ul").stop().animate({"left":(-n*100)+"%"}, 500, function(){
+
 		if(n == end) a = -1;
 		if(n == 0) a = 1;
 		n += a;
+
 	});
 }

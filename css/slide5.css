@@ -1,0 +1,19 @@
+@import 'base.css';
+
+.wrap {width:100%;}
+.banners {width:100%; max-width:800px; margin:auto; position:relative; overflow:hidden;}
+.banners > ul {width:100%; position:absolute;}
+.banner {width:100%; position:absolute;}
+
+.banners > img:nth-of-type(1) {
+	animation-name: fader;
+	animation-delay: 4s;
+	animation-duration: 1s;
+	z-index: 10;
+}
+.banners img:nth-of-type(2) {
+	z-index: 20;
+}
+.banners img:nth-of-type(n+3) {
+	display: none;
+}
